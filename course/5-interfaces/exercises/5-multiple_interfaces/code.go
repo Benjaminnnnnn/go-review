@@ -6,10 +6,16 @@ import (
 
 func (e email) cost() float64 {
 	// ?
+	l := float64(len(e.body))
+	if !e.isSubscribed {
+		return 0.05 * l
+	}
+	return 0.01 * l
 }
 
 func (e email) print() {
 	// ?
+	fmt.Printf("%s\n", e.body)
 }
 
 // don't touch below this line

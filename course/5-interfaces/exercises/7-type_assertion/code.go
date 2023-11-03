@@ -6,6 +6,13 @@ import (
 
 func getExpenseReport(e expense) (string, float64) {
 	// ?
+	if e, ok := e.(email); ok {
+		return e.toAddress, e.cost()
+	}
+	if s, ok := e.(sms); ok {
+		return s.toPhoneNumber, s.cost()
+	}
+	return "", 0.0
 }
 
 // don't touch below this line

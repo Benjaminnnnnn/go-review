@@ -6,6 +6,16 @@ import (
 
 func maxMessages(thresh float64) int {
 	// ?
+	totalCost, numMessages := 0.0, 0
+	for {
+		totalCost += 1.0 + float64(numMessages)*0.01
+		if totalCost < thresh {
+			numMessages++
+		} else {
+			break
+		}
+	}
+	return numMessages
 }
 
 // don't edit below this line

@@ -1,7 +1,10 @@
 package main
 
+import "fmt"
+
 func getSMSErrorString(cost float64, recipient string) string {
 	// ?
+	return fmt.Sprintf("SMS that costs $%f to ben sent to '%s'", cost, recipient)
 }
 
 // don't edit below this line

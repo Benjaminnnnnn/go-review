@@ -7,10 +7,12 @@ import (
 
 func sendMessage(msg message) {
 	// ?
+	fmt.Println(msg.getMessage())
 }
 
 type message interface {
 	// ?
+	getMessage() string
 }
 
 // don't edit below this line
