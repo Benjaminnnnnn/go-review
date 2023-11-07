@@ -4,6 +4,11 @@ import "fmt"
 
 func sum(nums ...float64) float64 {
 	// ?
+	sum := 0.0
+	for _, n := range nums {
+		sum += n
+	}
+	return sum
 }
 
 // don't edit below this line
