@@ -2,8 +2,12 @@ package main
 
 import "fmt"
 
-func getLast[]() {
-
+func getLast[T any](slice []T) T {
+	if len(slice) == 0 {
+		var zero T
+		return zero
+	}
+	return slice[len(slice)-1]
 }
 
 // don't edit below this line

@@ -8,6 +8,20 @@ import (
 
 func logMessages(chEmails, chSms chan string) {
 	// ?
+	for {
+		select {
+		case email, ok := <-chEmails:
+			if !ok {
+				return
+			}
+			logEmail(email)
+		case sms, ok := <-chSms:
+			if !ok {
+				return
+			}
+			logSms(sms)
+		}
+	}
 }
 
 // TEST SUITE - Don't touch below this line
