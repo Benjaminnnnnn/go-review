@@ -22,7 +22,7 @@ func main() {
 go run main.go
 ```
 
-The `go run` command is used to quickly compile and run a Go package. The compiled binary is *not* saved in your working directory. Use `go build` instead to compile production executables.
+The `go run` command is used to quickly compile and run a Go package. The compiled binary is _not_ saved in your working directory. Use `go build` instead to compile production executables.
 
 I rarely use `go run` other than to quickly do some testing or debugging.
 
