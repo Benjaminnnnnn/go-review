@@ -2,10 +2,20 @@ package main
 
 import (
 	"fmt"
+	"strings"
 )
+
+var profaneWords = map[string]string{
+	"dang":  "****",
+	"shoot": "*****",
+	"heck":  "****",
+}
 
 func removeProfanity(message *string) {
 	// ?
+	for k, v := range profaneWords {
+		*message = strings.ReplaceAll(*message, k, v)
+	}
 }
 
 // don't touch below this line

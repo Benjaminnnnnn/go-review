@@ -4,6 +4,11 @@ import "fmt"
 
 func adder() func(int) int {
 	// ?
+	sum := 0
+	return func(input int) int {
+		sum += input
+		return sum
+	}
 }
 
 // don't touch below this line
