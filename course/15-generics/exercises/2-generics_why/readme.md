@@ -6,7 +6,7 @@ You should care about generics because they mean you don’t have to write as mu
 
 ## Generics are used more often in libraries and packages
 
-Generics give Go developers an elegant way to write amazing utility packages. While you will see and use generics in application code, I think it will much more common to see generics used in libraries and packages. Libraries and packages contain importable code intended to be used in *many* applications, so it makes sense to write them in a more abstract way. Generics are often the way to do just that!
+Generics give Go developers an elegant way to write amazing utility packages. While you will see and use generics in application code, I think it will much more common to see generics used in libraries and packages. Libraries and packages contain importable code intended to be used in _many_ applications, so it makes sense to write them in a more abstract way. Generics are often the way to do just that!
 
 ## Why did it take so long to get generics?
 

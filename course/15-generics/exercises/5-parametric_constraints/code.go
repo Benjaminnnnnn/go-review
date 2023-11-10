@@ -5,6 +5,10 @@ import (
 )
 
 // ?
+type biller[C customer] interface {
+	Charge(C) bill
+	Name() string
+}
 
 // don't edit below this line
 
